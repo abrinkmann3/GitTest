@@ -1,5 +1,15 @@
 package Fabrikmethode;
 
-public class Pizzeria {
+public abstract class Pizzeria {
+	
+	public Pizzeria() {
+		
+		
+	}
+
+	public abstract IPizza erstellePizza(String p);
 
 }
+
+
+
