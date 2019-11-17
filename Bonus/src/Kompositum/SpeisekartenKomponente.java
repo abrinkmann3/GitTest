@@ -29,6 +29,7 @@ public abstract class SpeisekartenKomponente {
 
 	}
 
+	@SuppressWarnings("null")
 	public double getPreis() {
 		System.out.println("Kind-Methode ist nicht implementiert!");
 		return (Double) null;

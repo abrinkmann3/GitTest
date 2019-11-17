@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class TemperaturFuehler implements Fuehler {
 
 	private int temperature;
-	private Anzeige anzeige;
+	//private Anzeige anzeige;
 	private ArrayList<Anzeige> anzeigeListe = new ArrayList<Anzeige>();
 
 	@Override
