@@ -1,8 +1,8 @@
 package Fabrikmethode;
 
-public abstract class MuenchenPizza extends Pizzeria {
+public class MuenchenPizzeria extends Pizzeria {
 
-	public MuenchenPizza() {
+	public MuenchenPizzeria() {
 
 	}
 
