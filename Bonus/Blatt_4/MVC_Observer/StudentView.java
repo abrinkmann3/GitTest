@@ -72,6 +72,8 @@ public class StudentView implements IView, ActionListener{
 	{
 		
 		// hier vervollständigen
+		semesterLabel.setText(model.getSemester());
+		
 		
 	}
 

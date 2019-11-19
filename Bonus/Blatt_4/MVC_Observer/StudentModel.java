@@ -36,6 +36,7 @@ public class StudentModel implements IModel {
 	private void benachrichtigen() {
 		
 		// hier vervollständigen
+		view.aktualisieren(this);
 		
 	}
 
@@ -58,7 +59,7 @@ public class StudentModel implements IModel {
 	
 	public String getSemester()
 	{
-		return new String("");
+		return new String(this.semester + "");
 		
 		// hier vervollständigen
 	}
