@@ -4,7 +4,7 @@ public class TestKlient {
 
 	public static void main(String[] args) {
 		SpeisekartenKomponente karte0 = new Speisekarte("Hauptkarte", "Übersicht");
-
+		
 		SpeisekartenKomponente karte1 = new Speisekarte("Hauptgerichte", "Unsere Hauptgerichte: ");
 		SpeisekartenKomponente speise1 = new Speise("Wiener Schnitzel", "Paniertes Kalbsschnitzel mit Gurkensalat",
 				19.50, false);
