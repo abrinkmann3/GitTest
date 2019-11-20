@@ -1,6 +1,6 @@
 package Kompositum;
 
-public class TestKlient {
+public class Testklient {
 
 	public static void main(String[] args) {
 		SpeisekartenKomponente karte0 = new Speisekarte("Hauptkarte", "Übersicht");
@@ -17,18 +17,17 @@ public class TestKlient {
 
 		karte0.hinzufuegen(karte1); // Gesamtkarte
 
-		karte1.hinzufuegen(speise1);
-		karte1.hinzufuegen(speise2);
+		karte1.hinzufuegen(speise1); //Karte "Hauptgerichte" hinzufuegen
+		karte1.hinzufuegen(speise2); 
 
-		karte0.hinzufuegen(karte2);
+		karte0.hinzufuegen(karte2); //Karte "Desert" hinzufuegen
 		karte2.hinzufuegen(speise3);
 		karte2.hinzufuegen(speise4);
 
 		//System.out.println("\n Gesamtekarte");
 		karte0.ausgeben();
 
-		//System.out.println("\n Desertkarte");
-		//karte2.ausgeben();
+		
 
 	}
 

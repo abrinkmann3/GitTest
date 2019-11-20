@@ -10,9 +10,6 @@ public class Speisekarte extends SpeisekartenKomponente {
 		super(name, beschreibung);
 	}
 
-	/*
-	 * public void finalize() throws Throwable { super.finalize(); }
-	 */
 	public void ausgeben() {
 		System.out.println();
 		System.out.println("Speisekarte: " + super.getName());

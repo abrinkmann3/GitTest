@@ -9,7 +9,7 @@ public abstract class SpeisekartenKomponente {
 		this.beschreibung = beschreibung;
 
 	}
-
+	
 	public void entfernen(SpeisekartenKomponente komponente) {
 		System.out.println("Kind-Methode ist nicht implementiert!");
 	}
