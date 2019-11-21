@@ -26,7 +26,7 @@ public class Testklient {
 
 		//System.out.println("\n Gesamtekarte");
 		karte0.ausgeben();
-
+		
 		
 
 	}
