@@ -13,6 +13,7 @@ import model.SchuhartikelModel;
 
 public class Tester {
 	
+	
 	public static void main(String[] args){
 	
 		//Erstellen eines Objektes der Klasse Bestellungen das die einzelnen Bestellungen verwaltet

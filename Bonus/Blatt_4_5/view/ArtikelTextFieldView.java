@@ -9,32 +9,30 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import controller.ArtikelControllerInterface;
 import controller.ArtikelLabelController;
 import controller.ArtikelTextFieldController;
-import model.ArtikelModel;
 import model.ArtikelModelInterface;
 import model.KundeModel;
 import model.Observer;
 
-public class ArtikelLableView implements Observer{
-
-	private ArtikelLabelController a_controller;
+public class ArtikelTextFieldView implements Observer{
 	
+	private ArtikelLabelController a_controller;
+	private ArtikelTextFieldController atf_controller;
 	private ArtikelModelInterface a_model;
 	private JFrame frame;
 	private JLabel artikelbezeichnung;
 	private JLabel artikelpreis;
-	private JButton inWarenkorbButton;
-	//geändert
-	private ArtikelTextFieldController atf_controller;
 	private JTextField artikelpreisEdit;
+	private JButton inWarenkorbButton;
 	private JButton preisAendern;
 	
-	public ArtikelLableView(ArtikelModelInterface artikelModelInterface, KundeModel k_model){
+	public ArtikelTextFieldView(ArtikelModelInterface artikelModelInterface, KundeModel k_model){
 		a_model = artikelModelInterface;
 		a_model.register(this);
 		a_controller = new ArtikelLabelController(artikelModelInterface, this, k_model);
+		//atf_controller = new ArtikelTextFieldController(atf_controller);
+		
 		createComponents();
 	}
 	
@@ -44,24 +42,19 @@ public class ArtikelLableView implements Observer{
 		
 		artikelbezeichnung = new JLabel("Bezeichnung: " + a_model.getBezeichnung());
 		artikelpreis = new JLabel("Preis: " + a_model.getPreis() + "€");
-		inWarenkorbButton = new JButton("Warenkorb hinzufügen");
-		//
-		artikelpreisEdit = new JTextField("Neuer Preis: ");
-		preisAendern = new JButton ("Preis ändern");
-		inWarenkorbButton.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e) {
-				a_controller.artikelZuWarenkorb();
-			}
-		});
-		//hinzugefügt
 		artikelpreisEdit = new JTextField("Neuer Preis: ");
 		preisAendern = new JButton ("Preis ändern");
 		preisAendern.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				atf_controller.setPreis(Double.parseDouble(artikelpreisEdit.getText()));
-				System.out.println("Artikelpreis geändert!");
+				atf_controller.setPreis(Integer.parseInt(artikelpreisEdit.getText()));
 			}
 			
+		});
+		inWarenkorbButton = new JButton("Warenkorb hinzufügen");
+		inWarenkorbButton.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				a_controller.artikelZuWarenkorb();
+			}
 		});
 		
 		frame.setLayout(new GridLayout(3,1));
@@ -76,10 +69,10 @@ public class ArtikelLableView implements Observer{
 		frame.setVisible(true);
 
 	}
-	
+
 	@Override
 	public void update() {
-		// Hier Werte des Models abfragen und Labels anpassen
+		// TODO Auto-generated method stub
 		
 	}
 
