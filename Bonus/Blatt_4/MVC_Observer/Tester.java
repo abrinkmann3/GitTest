@@ -1,5 +1,6 @@
 package MVC_Observer;
-import java.util.Vector;
+
+
 
 
 public class Tester {
@@ -10,6 +11,7 @@ public class Tester {
 		StudentController studentController = new StudentController(studentModel);
 		
 		StudentView studentView = new StudentView(studentController, studentModel);
+		TeacherView teacherView = new TeacherView(studentController, studentModel);
 		
 		
 	}

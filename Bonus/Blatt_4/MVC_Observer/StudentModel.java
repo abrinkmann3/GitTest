@@ -1,13 +1,15 @@
 package MVC_Observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class StudentModel implements IModel {
 	private String name;
 	private String number;
 	private int semester=0;
 
-	private IView view;
-	
+	private List<IView> viewList = new ArrayList<IView>();
 	public StudentModel(String sname, String snumber, int ssemester)
 	{
 		name = sname;
@@ -23,20 +25,21 @@ public class StudentModel implements IModel {
 	}
 	
 	public void anmelden(IView view) {
-		this.view = view;
+		viewList.add(view);
 	}
 	
 	@Override
 	public void abmelden(IView view) {
-		this.view = null;
+		viewList.remove(view);
 		
 	}
 
 	
 	private void benachrichtigen() {
 		
-		// hier vervollständigen
-		view.aktualisieren(this);
+		for (IView view : this.viewList) {
+			view.aktualisieren(this);
+		}
 		
 	}
 
