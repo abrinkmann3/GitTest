@@ -1,14 +1,19 @@
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
+import javax.swing.SwingConstants;
 
+import model.ArtikelModelInterface;
 import model.ArtikellisteModel;
 import model.Observer;
 
@@ -19,6 +24,7 @@ public class ArtikellisteView implements Observer{
 	private JPanel panel = new JPanel();
 	private JList liste;
 	private JLabel label = new JLabel("Wählen Sie den Artikel:");
+	private final JButton btnPreisndern = new JButton("Preis \u00C4ndern");
 	
 	
 	public ArtikellisteView(ArtikellisteModel model){
@@ -49,6 +55,18 @@ public class ArtikellisteView implements Observer{
 		        } 
 		    }
 		});
+		
+		btnPreisndern.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int index = liste.getLeadSelectionIndex();
+				ArtikelModelInterface artikel = al_model.getArtikelliste().get(index);
+				ArtikelTextFieldView tfv = new ArtikelTextFieldView(artikel);
+			}
+		});
+		btnPreisndern.setHorizontalAlignment(SwingConstants.LEFT);
+		btnPreisndern.setVerticalAlignment(SwingConstants.TOP);
+		
+		panel.add(btnPreisndern);
 		
 		panel.add(liste);
 		

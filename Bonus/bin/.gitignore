@@ -1,4 +1,13 @@
-/controller/
-/view/
-/model/
+/Fabrikmethode/
+/Kompositum/
+/MVCTestDrive.class
 /MVC_Observer/
+/Observer/
+/Proxy/
+/Singleton/
+/StatischeFabrik/
+/Test/
+/Vermittler/
+/controller/
+/model/
+/view/

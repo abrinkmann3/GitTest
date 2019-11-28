@@ -25,7 +25,7 @@ public class ArtikelTextFieldView implements Observer {
 	private JTextField artikelpreisEdit;
 	private JButton preisAendernBtn;
 
-	public ArtikelTextFieldView(ArtikelModelInterface artikelModelInterface, KundeModel k_model) {
+	public ArtikelTextFieldView(ArtikelModelInterface artikelModelInterface) {
 		a_model = artikelModelInterface;
 		a_model.register(this);
 		a_controller = new ArtikelTextFieldController(artikelModelInterface, this);
