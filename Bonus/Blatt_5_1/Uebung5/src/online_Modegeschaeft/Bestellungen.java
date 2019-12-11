@@ -1,4 +1,4 @@
-package online_Modegeschaeft;
+package Uebung5.src.online_Modegeschaeft;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
