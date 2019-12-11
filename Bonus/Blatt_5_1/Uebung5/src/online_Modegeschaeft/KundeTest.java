@@ -4,10 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class RabattTest {
+public class KundeTest {
 
 	@Test
-	public void testGetGesamtbetrag() {
+	public void testLoescheArtikelAusWarenkorb() {
 		fail("Not yet implemented");
 	}
 
