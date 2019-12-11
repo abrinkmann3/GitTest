@@ -4,5 +4,7 @@
 	<classpathentry kind="src" path="Blatt_3"/>
 	<classpathentry kind="src" path="Blatt_4"/>
 	<classpathentry kind="src" path="Blatt_4_5"/>
+	<classpathentry kind="src" path="Blatt_5_1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
