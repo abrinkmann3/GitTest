@@ -1,8 +1,6 @@
 /Aufgabe_5_2/
 /MVCTestDrive.class
 /MVC_Observer/
-/Observer/
-/Proxy/
 /Singleton/
 /StatischeFabrik/
 /Test/
@@ -11,3 +9,5 @@
 /controller/
 /model/
 /view/
+/monopoly/
+/edu/

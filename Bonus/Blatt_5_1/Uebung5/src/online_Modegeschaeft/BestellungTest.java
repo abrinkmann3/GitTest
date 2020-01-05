@@ -10,9 +10,8 @@ public class BestellungTest {
 	private Bestellungen best;
 	private Bestellungen best2;
 	private Bestellungen best3;
-	private Kunde k3;
-	private Kunde k1;
-	private Kunde k2;
+	private Kunde k1, k2, k3;
+
 	
 	@Before
 	public void setUp() throws Exception {

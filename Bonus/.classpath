@@ -5,6 +5,8 @@
 	<classpathentry kind="src" path="Blatt_4"/>
 	<classpathentry kind="src" path="Blatt_4_5"/>
 	<classpathentry kind="src" path="Blatt_5_1"/>
+	<classpathentry kind="src" path="Blatt_6"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/abrin/iCloudDrive/Fh_/WS 19_20 (3. Semester)/Systementwicklung Bonus/mockito-all-2.0.2-beta.jar.pdf"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
