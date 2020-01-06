@@ -2,18 +2,13 @@ package RolleFowler;
 
 public class MitarbeiterRolle {
 	
-	private Mitarbeiter ma;
+	public Mitarbeiter mitarbeiter;
 	
-	public MitarbeiterRolle() {
-		this.ma = ma;
+	public boolean hatRolle(String value) {
+		return false;
 	}
-	
-	public Mitarbeiter getMa() {
-		return ma;
-	}
-	
-	public void setMa(Mitarbeiter ma) {
-		this.ma = ma;
+	public void setMitarbeiter(Mitarbeiter mitarbeiter) {
+		this.mitarbeiter = mitarbeiter;
 	}
 
 }

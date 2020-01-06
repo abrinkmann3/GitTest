@@ -5,18 +5,28 @@ import java.util.List;
 
 public class Mitarbeiter {
 	private String name;
+
+	private List<MitarbeiterRolle> rollen;
 	
-	private List <MitarbeiterRolle> maListe = new ArrayList <MitarbeiterRolle>(); 
-	
-	public void addRole(MitarbeiterRolle ma) {
-		maListe.add(ma);
+	public Mitarbeiter(String name) {
+		this.name = name;
+		rollen = new ArrayList<MitarbeiterRolle>();
 	}
-	
-	public MitarbeiterRolle rolle (String roleName) {
-		for(MitarbeiterRolle liste:maListe) {
-			return liste;
+
+	public void addRole(MitarbeiterRolle rolle) {
+		rollen.add(rolle);
+	}
+
+	public MitarbeiterRolle rolle(String roleName) {
+		for (MitarbeiterRolle liste : rollen) {
+			if(liste.hatRolle(roleName)) {
+				return liste;
+			}
 		}
 		return null;
+	}
 	
+	public String getName() {
+		return name;
 	}
 }
