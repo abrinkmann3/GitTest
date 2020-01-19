@@ -7,9 +7,12 @@ public class MuenchenPizzeria extends Pizzeria {
 	}
 
 	@Override
-	public IPizza erstellePizza(String p) {
-
-		return new MuenchenerSalamiPizza();
+	public Pizza erstellePizza(String p) {
+		if(p.equalsIgnoreCase("Salami")){
+			return new MuenchenerSalamiPizza();	
+		}
+		return null;
+		
 	}
 
 }

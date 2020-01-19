@@ -7,7 +7,7 @@ public abstract class Pizzeria {
 		
 	}
 
-	public abstract IPizza erstellePizza(String p);
+	public abstract Pizza erstellePizza(String p);
 
 }
 

@@ -1,4 +1,4 @@
-package RolleFowler;
+ package RolleFowler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,7 @@ public class Mitarbeiter {
 
 	public void addRole(MitarbeiterRolle rolle) {
 		rollen.add(rolle);
+		rolle.setMitarbeiter(this);
 	}
 
 	public MitarbeiterRolle rolle(String roleName) {

@@ -1,6 +1,6 @@
 package Fabrikmethode;
 
-public class BerlinerSchinkenPizza implements IPizza {
+public class BerlinerSchinkenPizza extends Pizza {
 	
 	public BerlinerSchinkenPizza() {		
 		vorbereiten();

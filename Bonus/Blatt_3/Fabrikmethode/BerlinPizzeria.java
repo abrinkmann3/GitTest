@@ -9,7 +9,7 @@ public class BerlinPizzeria extends Pizzeria {
 	
 
 	@Override
-	public IPizza erstellePizza(String p) {
+	public Pizza erstellePizza(String p) {
 		
 		switch(p) {
 		

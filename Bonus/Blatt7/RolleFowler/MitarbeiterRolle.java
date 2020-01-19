@@ -1,4 +1,4 @@
-package RolleFowler;
+	package RolleFowler;
 
 public class MitarbeiterRolle {
 	
@@ -10,5 +10,5 @@ public class MitarbeiterRolle {
 	public void setMitarbeiter(Mitarbeiter mitarbeiter) {
 		this.mitarbeiter = mitarbeiter;
 	}
-
+	
 }

@@ -1,6 +1,6 @@
 package Fabrikmethode;
 
-public interface IPizza {
+public abstract class Pizza {
 	
 	public abstract void vorbereiten();	
 	public abstract void backen();	
